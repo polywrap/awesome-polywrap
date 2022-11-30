@@ -154,7 +154,7 @@ URI resolvers: (TODO move to wrappers section? under "uri-resolution"?)
 * wrap.link...
 * uniswap demo app
 * Gelato beta
-* axelar demo
+* [Axelar crosschain asset transfers demo](axelar.consideritdone.tech) - [repository](https://github.com/ConsiderItDone/axelar-demo-app)
 
 ## Registries
 * wrappers.io
