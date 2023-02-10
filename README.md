@@ -1,4 +1,4 @@
-# Awesome Polywrap [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome Polywrap (🏗️WIP⚙️) [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 A collection of awesome things regarding the Polywrap ecosystem.
 
