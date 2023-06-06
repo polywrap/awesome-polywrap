@@ -1,89 +1,53 @@
-# Awesome Polywrap (🏗️WIP⚙️) [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome Polywrap [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-A collection of awesome things regarding the Polywrap ecosystem.
+A collection of awesome things within the Polywrap ecosystem.
 
-## Developer Resources
-* [Polywrap Docs](https://docs.polywrap.io/)
-* [WRAP Specification](https://github.com/polywrap/specification)
-* [Polywrap CLI](https://docs.polywrap.io/reference/cli/polywrap-cli)
-* [Polywrap Wrapper Runner (PWR) CLI](https://github.com/polywrap/pwr)
+## Wraps
 
-## Wrappers
-
-### Core
-* [polywrap/logging](https://github.com/polywrap/logging)
-  * [logging-wrapper](https://github.com/polywrap/logging/blob/master/aggregator/resources/README.md)
-  * [logger-interface](https://github.com/polywrap/logging/blob/master/logger/interface/resources/README.md)
-    * [logger-plugin-js](https://github.com/polywrap/logging/tree/master/logger/implementations/logger-plugin-js)
-* [polywrap/networking]()
-  * [http-interface]()
-    * [http-plugin-js]()
-  * [ws-interface]()
-    * [ws-plugin-js]()
-* [polywrap/filesystem]()
-  * [filesystem-interface]()
-    * [filesystem-plugin-js]()
-* datetime...
-* sleep...
-* encoding
-  * msgpack...
-  * borsh...
-* sha3...
-* concurrency...
-* cache...
-* uts46...
-* URI resolvers: (TODO move to wrappers section? under "uri-resolution"?)
-  * ipfs-uri...
-  * ens-uri...
-  * file-uri...
-  * http-uri...
-
-### Web3
-
-* IPFS HTTP Wrapper...
-* [Ethereum RPC Wrapper](https://github.com/polywrap/integrations/tree/main/protocol/ethereum/wrapper)
-  * [Signer / Provider Plugin (JS)](https://github.com/polywrap/integrations/tree/main/protocol/ethereum/provider)
-* tezos...
-* near...
-* substrate...
-* [ENS Wrapper](https://github.com/polywrap/integrations/tree/main/protocol/ethereum/ens/wrapper)
-* [Safe](https://github.com/5afe/safe-contracts-wrapper/)
-* [DeFi Wrapper](https://github.com/polywrap/defiwrapper)
-* [Uniswap V2 Wrapper](https://github.com/polywrap/integrations/tree/kris/ipfs-http-client/protocol/ethereum/uniswapv2)
-* [Uniswap V3 Wrapper](https://github.com/polywrap/integrations/tree/kris/ipfs-http-client/protocol/ethereum/uniswapv3/wrapper)
-  * demo app...
-* Axelar...
-  * [crosschain asset transfers demo](axelar.consideritdone.tech) - [repository](https://github.com/ConsiderItDone/axelar-demo-app)
-* Graphnode...
-* coingecko
-* gelato
-  * Gelato beta
+* [Ethers](https://github.com/polywrap/ethers) - Interact with the Ethereum blockchain. A wrap'd version of the popular [ethers-rs](https://github.com/gakonst/ethers-rs) library.
+* [Ethereum Wallet](https://github.com/polywrap/ethereum-wallet) - Access Ethereum key signers & network providers.
+* [Uniswap (V2 & V3)](https://github.com/polywrap/uniswap) - Uniswap is a decentralized cryptocurrency exchange that uses a set of smart contracts to execute trades.
+* [Safe Contracts](https://github.com/polywrap/safe-contracts-wrapper) - Safe is the most trusted decentralized custody protocol and collective asset management platform on Ethereum and the EVM.
+* [Safe Account Abstraction](https://github.com/cbrzn/account-abstraction-wrapper) - Safe's account abstract SDK enables developers to onboard new users to their decentralized apps.
+* [IPFS HTTP Client](https://github.com/polywrap/ipfs) - Interact with an IPFS node via its HTTP API.
+* [ENS](https://github.com/polywrap/ens) - The Ethereum Name Service (ENS) is a distributed, open, and extensible naming system based on the Ethereum blockchain.
+* [Logging](https://github.com/polywrap/logging) - A simple dispatcher of messages, with pre-defined level of importance (debug, info, warn, error).
+* [File System](https://github.com/polywrap/file-system) - Interact with the operating system's file system.
+* [HTTP](https://github.com/polywrap/http) - Send HTTP(S) network requests.
+* [WebSocket](https://github.com/polywrap/websocket) - Send & receive messages from websocket servers.
+* [DateTime](https://github.com/polywrap/datetime) - Interact with the operating system's date / time API.
+* [Random](https://github.com/polywrap/random) - Interact with the operating system's random number generator.
+* [Concurrent](https://github.com/polywrap/concurrent) - A common concurrency interface that can be shared across various concurrency implementations, like Threads, Processes, and even language specific primitives like JavaScript Promises.
+* [Cache](https://github.com/polywrap/cache) - A caching interface for the wraps, to be used for long-term data persistence.
 
 ## Clients
-* polywrap/js-client...
-* polywrap/python-client...
-* polywrap/rust-client...
-* polywrap/go-client...
 
-## Languages
-* AssemblyScript
-  * bindings...
-  * runtime...
-  * build...
-* Rust
-  * ...
-* Go
-  * ...
+* [JavaScript / TypeScript](https://github.com/polywrap/javascript-client)
+* [Rust / Native](https://github.com/polywrap/rust-client)
+* [Python](https://github.com/polywrap/python-client)
+* [Kotlin](https://github.com/polywrap/kotlin-client)
+* [Swift](https://github.com/polywrap/swift-client)
+* [Go](https://github.com/polywrap/go-client)
 
-## Developer Tools
-* wrappers.io
-* wrap.link...
+## Tools
+
+* [`polywrap` CLI](https://github.com/polywrap/cli) - The main CLI of the Polywrap project. Used to integrate, build, and deploy wraps.
+* [`pwr` CLI](https://github.com/polywrap/pwr) - Polywrap Wrapper Runner (PWR) is a CLI application for running Polywrap wrappers. It uses the PolywrapClient to execute any wrapper that implements the PwrApp interface `wrap://ens/pwr-app.eth`.
+* [wrappers.io](https://wrappers.io) - Publish, download, and explore all wraps within the ecosystem.
+
+## Content
+
+### Videos
+* [Polywrap Introduction](https://youtu.be/bYgtjeWFt8E)
+
+### Presentations
+* [Polywrap x ChainSafe](https://youtu.be/ff5486mMvfI)
+* [Polywrap @ BlockSplit](https://youtu.be/M8X6uEiqXPI)
+* [Polywrap @ EthCC](https://www.youtube.com/live/uOJznNDxcck?feature=share)
 
 ## Community
 * [Website](https://polywrap.io/)
 * [GitHub](https://github.com/polywrap)
 * [Discord](https://discord.polywrap.io/)
 * [Twitter](https://twitter.com/polywrap_io)
-* [Forum](https://forum.polywrap.io/)
-* [Peeranha * Technical Q&A Platform](https://polywrap.peeranha.io/)
-* [Reddit](https://reddit.com/r/polywrap)
+* [Blog](https://blog.polywrap.io/)
